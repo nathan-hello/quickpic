@@ -15,9 +15,7 @@ export async function GenerateImage(params: {
   const interSemiBold = fetch(
     new URL("../fonts/Inter-SemiBold.ttf", import.meta.url),
   ).then((res) => res.arrayBuffer());
-  const interLight = fetch(
-    new URL("../fonts/Inter-Light.ttf", import.meta.url),
-  ).then((res) => res.arrayBuffer());
+
 
   return new ImageResponse(
     (
@@ -64,12 +62,6 @@ export async function GenerateImage(params: {
           data: await interSemiBold,
           style: "normal",
           weight: 600,
-        },
-        {
-          name: "Inter",
-          data: await interLight,
-          style: "normal",
-          weight: 300,
         },
       ],
     },
