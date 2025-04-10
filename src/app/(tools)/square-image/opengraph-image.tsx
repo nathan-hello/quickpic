@@ -1,5 +1,6 @@
 import { GenerateImage } from "@/app/utils/og-generator";
 
+export const runtime = "edge";
 
 export const alt = "Square Image Generator - QuickPic";
 export const contentType = "image/png";
